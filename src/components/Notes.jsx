@@ -25,7 +25,7 @@ function Notes() {
     const noteToDelete = notes[index];
 
     try {
-      await fetch(`${API_URL}${noteToDelete._id}`, {
+      await fetch(`${API_URL}/${noteToDelete._id}`, {
         method: "DELETE",
       });
 
