@@ -1,0 +1,126 @@
+html {
+  background-color: #f8f8f8;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: center;
+}
+
+input,
+textarea {
+  border: none;
+  font-family: "Poppins", sans-serif;
+  background: none;
+  resize: none;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  background-color: #efdecd;
+  cursor: pointer;
+  border: none;
+  height: 40px;
+  width: 100px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.PostInput {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: #ffff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 5px;
+}
+
+.PostInput .title {
+  height: 100px;
+  width: 20rem;
+  font-size: 24px;
+}
+
+.PostInput .content {
+  height: 200px;
+  font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px;
+}
+
+.catalog .note {
+  padding: 5px;
+  margin: 10px;
+  background-color: #fff;
+  border: black solid 1px;
+  min-height: 200px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  .PostInput .title {
+    height: 100px;
+    width: 15rem;
+    font-size: 24px;
+  }
+
+  .PostInput .content {
+    height: 200px;
+    font-size: 16px;
+  }
+}
+
+.note {
+  position: relative;
+}
+
+.delete {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 20px;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.colorPicker {
+  height: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.SketchPicker {
+  position: absolute;
+  z-index: 100;
+  bottom: 60px;
+}
